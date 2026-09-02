@@ -1,0 +1,16 @@
+[
+  {
+    "mode": "codeproof",
+    "repositories": 6,
+    "full_repositories": 5,
+    "passed_specs": 320,
+    "total_specs": 323
+  },
+  {
+    "mode": "proof",
+    "repositories": 37,
+    "full_repositories": 35,
+    "passed_specs": 2286,
+    "total_specs": 2382
+  }
+]

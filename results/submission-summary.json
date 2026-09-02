@@ -1,0 +1,84 @@
+{
+  "schema": "synthesa.vero.submission-summary.v1",
+  "status": "DRAFT_PENDING_MAINTAINER_GRADING",
+  "result_kind": "MIXED_MODE_QUALIFIED_PORTFOLIO",
+  "vero_commit": "0a7325df9e9e6dbc275c0ad483b3d1cbe38d9b09",
+  "campaign_root": "cfd0bc418a41ca32eb5b8ede967d2e55c4be38ca514fc0b6e503369711ea3d8c",
+  "metrics": {
+    "inventory_repositories": 43,
+    "officially_graded_repositories": 43,
+    "full_repositories": 40,
+    "passed_specs": 2606,
+    "total_specs": 2705,
+    "false_accepted": 0,
+    "signed_v2_overrides": 40,
+    "full_repository_delta": 38,
+    "specification_delta": 1576
+  },
+  "modes": [
+    {
+      "mode": "codeproof",
+      "repositories": 6,
+      "full_repositories": 5,
+      "passed_specs": 320,
+      "total_specs": 323
+    },
+    {
+      "mode": "proof",
+      "repositories": 37,
+      "full_repositories": 35,
+      "passed_specs": 2286,
+      "total_specs": 2382
+    }
+  ],
+  "cost": {
+    "accounting_scope": "All NanoGPT proposer responses with explicit pricing metadata found under research/vero-v3/results; this is conservative R&D proposer spend, not total human/orchestrator/compute cost.",
+    "scoring_replay_model_calls": 0,
+    "scoring_replay_model_cost_usd": 0,
+    "development_calls": 33,
+    "prompt_tokens": 628022,
+    "completion_tokens": 34377,
+    "total_tokens": 662399,
+    "external_proposer_api_cost_usd": 0.710391762755,
+    "by_model": [
+      {
+        "model": "anthropic/claude-sonnet-4.6",
+        "calls": 2,
+        "prompt_tokens": 18038,
+        "completion_tokens": 1663,
+        "total_tokens": 19701,
+        "cost_usd": 0.07510605000000001
+      },
+      {
+        "model": "deepseek/deepseek-v4-flash",
+        "calls": 16,
+        "prompt_tokens": 401988,
+        "completion_tokens": 6329,
+        "total_tokens": 408317,
+        "cost_usd": 0.052827032754999996
+      },
+      {
+        "model": "openai/gpt-5.5",
+        "calls": 4,
+        "prompt_tokens": 40414,
+        "completion_tokens": 13054,
+        "total_tokens": 53468,
+        "cost_usd": 0.5640055
+      },
+      {
+        "model": "qwen3.5-4b",
+        "calls": 11,
+        "prompt_tokens": 167582,
+        "completion_tokens": 13331,
+        "total_tokens": 180913,
+        "cost_usd": 0.01845318
+      }
+    ],
+    "limitations": [
+      "The ledger excludes unmetered Codex orchestration, human research time, local CPU time, and electricity.",
+      "Development cost is not directly comparable to a one-pass benchmark inference budget.",
+      "Zero scoring-replay cost means the frozen extracted artifacts require no model call to reproduce; it does not mean the research campaign used no models."
+    ]
+  },
+  "authority": "VERO_MAINTAINER_RERUN_OF_EXTRACTED_ARTIFACTS"
+}
